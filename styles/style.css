@@ -1,0 +1,72 @@
+.small-box {
+  border-radius: .25rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.small-box>.small-box-footer {
+  background-color: rgba(0, 0, 0, .1);
+  color: rgba(255, 255, 255, .8);
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.auth-bg {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Global background and font color for all pages */
+body {
+  background-color: #f0f2f5;
+  color: #333333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Links color */
+a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #34495e;
+  text-decoration: none;
+}
+
+/* Adjust main container if needed */
+.main-container {
+  padding-left: 270px; /* to accommodate sidebar width + some margin */
+  padding-top: 20px;
+}
+
+/* Sidebar link styles to override default bootstrap classes if any */
+.nav-link {
+  color: #ecf0f1 !important;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  background-color: #2980b9 !important;
+  color: white !important;
+  font-weight: 700;
+}
+
+.nav-link.text-dark {
+  color: #bdc3c7 !important;
+}
+
+.nav-link.text-dark:hover {
+  color: white !important;
+}

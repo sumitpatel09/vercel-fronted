@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global styles for the Task Management System */
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  
+  color: #222;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 28px;
+}
+
+input, select, textarea, button {
+  margin: 8px 0;
+  padding: 10px 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline-offset: 2px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #0070f3;
+  box-shadow: 0 0 8px rgba(0, 112, 243, 0.4);
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 112, 243, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+  box-shadow: 0 6px 12px rgba(0, 91, 181, 0.5);
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #0070f3;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #005bb5;
+}
+
+
+nav a:hover::after {
+  width: 100%;
+}
+
+form {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+ 
+  margin-bottom: 15px;
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+li:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.loginname {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.small-box {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+  color: #fff;
+  padding: 20px;
+}
+
+.small-box .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.small-box .icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  opacity: 0.5;
+}
+
+.small-box-footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  padding: 3px 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 10;
+  margin-top: 10px;
+  font-size: 0.875rem;
+}
+.card {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px 0 #0000001f !important;
+  transition: all .3s linear;
+}
+.card:hover {
+  box-shadow: 0 6px 10px 0 #0000006e !important;
+}
+h3.card-title {
+  font-size: 44px;
+}
+.card-text {
+  font-size: 24px;
+}
