@@ -6,7 +6,6 @@ import TaskList from '../components/TaskList';
 import TaskForm from '../components/TaskForm';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar'; // Import Sidebar
-const styles = require('../common/sonu.module.css');
 
 const TasksPage = () => {
   const [tasks, setTasks] = useState([]);
