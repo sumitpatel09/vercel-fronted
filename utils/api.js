@@ -1,7 +1,6 @@
 import axios from 'axios';
-
 const api = axios.create({
-  baseURL: 'https://vercel-fronted-nine.vercel.app/api',
+  baseURL: 'vercel-backend-beryl-nine.vercel.app/api', // ✅ correct (replace with your backend URL)
 });
 
 export default api;
