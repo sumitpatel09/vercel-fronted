@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://vercel-backend-beryl-nine.vercel.app/api', // ✅ this is correct
+  baseURL: 'https://vercel-backend-beryl-nine.vercel.app/api', 
 });
 
 export default api;
